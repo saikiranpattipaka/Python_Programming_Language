@@ -65,7 +65,7 @@ Python has various built-in data types:
 - **Numeric types**:
   - `int`: Integer (whole number).
   - `float`: Floating-point number (decimal).
-  - `complex`: Complex number (x + yj).
+  - `complex`: Complex number (`x + yj`).
 
 Example:
 ```python
@@ -74,7 +74,7 @@ y = 3.14    # float
 z = 2 + 3j  # complex
 ```
 - Text Type:
-  - str: String (a sequence of characters).
+  - `str`: String (a sequence of characters).
 
 Example:
 ```python
@@ -82,9 +82,9 @@ name = "Python"
 ```
 
 - Sequence Types:
-  - list: Ordered, mutable collection.
-  - tuple: Ordered, immutable collection.
-  - range: Sequence of numbers.
+  - `list`: Ordered, mutable collection.
+  - `tuple`: Ordered, immutable collection.
+  - `range`: Sequence of numbers.
 
 Example:
 ```python
@@ -92,37 +92,37 @@ numbers = [1, 2, 3]    # list
 coordinates = (1, 2)   # tuple
 ```
 - Mapping Type:
-  - dict: Key-value pairs (dictionary).
+  - `dict`: Key-value pairs (dictionary).
 Example:
 ```python
 person = {"name": "Alice", "age": 25}
 ```
 
 - Set Types:
-  - set: Unordered collection of unique elements.
-  - frozenset: Immutable version of set.
+  - `set`: Unordered collection of unique elements.
+  - `frozenset`: Immutable version of set.
 Example:
 ```python
 unique_numbers = {1, 2, 3}
 ```
 
 - Boolean Type:
-  - bool: Represents True or False.
+  - `bool`: Represents `True` or `False`.
 Example:
 ```python
 is_valid = True
 ```
 - Binary Types:
-  - bytes, bytearray, memoryview.
+  - `bytes`,`bytearray`,`memoryview`.
 
 ---
 
 ## 5. Strings
 
 **String operations**:
- - Concatenation: "Hello" + " " + "World"
- - Repetition: "Hello" * 3
- - Slicing: "Hello"[1:4] → "ell"
+ - Concatenation: `"Hello" + " " + "World"`
+ - Repetition: `"Hello" * 3`
+ - Slicing: `"Hello"[1:4] `→ `"ell"`
 
 - Methods:
 ```python
@@ -173,16 +173,16 @@ print(name[-1])   # n
 ---
 
 ## 8. Lists and Tuples
-- List:
+- **List**:
   - Ordered, mutable collection.
-  - Methods: append(), remove(), insert(), pop(), sort(), etc.
+  - Methods: `append()`,`remove()`,`insert()`,`pop()`,`sort()`, etc.
 Example:
 ```python
 fruits = ["apple", "banana", "cherry"]
 fruits.append("orange")  # Adds to the list
 ```
 
-- Tuple:
+- **Tuple**:
   - Ordered, immutable collection.
 Example:
 ```python
@@ -205,10 +205,10 @@ os.rmdir("empty_folder")   # Remove an empty directory
 ## 10. Sets
 A set is an unordered collection of unique elements.
 - **Set Operations**:
-  - Union: set1 | set2
-  - Intersection: set1 & set2
-  - Difference: set1 - set2
-  - Symmetric Difference: set1 ^ set2
+  - Union: `set1 | set2`
+  - Intersection: `set1 & set2`
+  - Difference: `set1 - set2`
+  - Symmetric Difference: `set1 ^ set2`
 
 Example:
 ```python
@@ -233,46 +233,46 @@ while i < 5:
     i += 1
 ```
 - **Break and Continue**:
- - break: Exits the loop.
- - continue: Skips the current iteration and continues with the next one.
+ - `break`: Exits the loop.
+ - `continue`: Skips the current iteration and continues with the next one.
 
 ---
 
 
 ## 12. Functions
 Functions allow you to group code into reusable blocks.
-- Defining a Function:
+- **Defining a Function**:
 ```python
 def greet(name):
     return f"Hello, {name}!"
 ```
-- Calling a Function:
+- **Calling a Function**:
 ```python
 print(greet("Alice"))
 ```
 
-- Arguments and Return Values:
-  - Functions can accept parameters and return values using the **return** keyword.
+- **Arguments and Return Values**:
+  - Functions can accept parameters and return values using the `return` keyword.
 
 ---
 
 
 ## 13. File Input and Output (I/O)
 Python allows reading from and writing to files.
-- Opening a file:
+- **Opening a file**:
 ```python
 file = open("example.txt", "w")  # Open file in write mode
 file.write("Hello, world!")
 file.close()
 ```
-- Reading from a file:
+- **Reading from a file**:
 ```python
 file = open("example.txt", "r")  # Open file in read mode
 content = file.read()
 print(content)
 file.close()
 ```
-- With statement (automatically closes the file):
+- **With statement**(automatically closes the file):
 ```python
 with open("example.txt", "r") as file:
     content = file.read()
@@ -283,8 +283,8 @@ with open("example.txt", "r") as file:
 ## 14. Object-Oriented Programming (OOP) Concepts
 
  **Classes and Objects**
- - Class is a blueprint for creating objects.
- - Object is an instance of a class.
+ - **Class** is a blueprint for creating objects.
+ - **Object** is an instance of a class.
 
 Example:
 
@@ -304,7 +304,6 @@ dog1.bark()  # Calling the method
 **Inheritance**
 
 Inheritance allows one class to inherit attributes and methods from another class.
-
 
 ```python
 class Animal:
