@@ -52,9 +52,9 @@ Python supports the **Unicode character set**, meaning it can handle characters 
   x = 10   # integer variable
   y = 3.14 # float variable
   name = "Alice" # string variable
-
+```
 - **Dynamic typing**: Python is dynamically typed, meaning variables can change types during execution.
-```python
+  ```python
   x = 10       # x is an integer
   x = "hello"  # x is now a string
 ```
