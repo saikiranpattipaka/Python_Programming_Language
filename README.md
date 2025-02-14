@@ -1,6 +1,7 @@
 # Basics of Python
 
-1. History of Python
+## 1. History of Python
+
 Developed by: Guido van Rossum in 1989.
 First release: Python 0.9.0 was released in 1991.
 Design philosophy: Emphasizes code readability, simplicity, and ease of learning.
