@@ -55,110 +55,104 @@ Python supports the **Unicode character set**, meaning it can handle characters 
 
 - **Dynamic typing**: Python is dynamically typed, meaning variables can change types during execution.
 ```python
- x = 10       # x is an integer
- x = "hello"  # x is now a string
+  x = 10       # x is an integer
+  x = "hello"  # x is now a string
 ```
 ---
 
 ## 4. Data Types
 Python has various built-in data types:
 - Numeric types:
-int: Integer (whole number).
-float: Floating-point number (decimal).
+ - int: Integer (whole number).
+ - float: Floating-point number (decimal).
+ - complex: Complex number (x + yj).
 
-- complex: Complex number (x + yj).
 Example:
 ```python
 x = 10      # int
 y = 3.14    # float
 z = 2 + 3j  # complex
 ```
-Text Type:
-
-str: String (a sequence of characters).
-
-Example:
-
-`name = "Python"`
-
-Sequence Types:
-
-list: Ordered, mutable collection.
-tuple: Ordered, immutable collection.
-range: Sequence of numbers.
+- Text Type:
+ - str: String (a sequence of characters).
 
 Example:
+```python
+name = "Python"
+```
 
-`numbers = [1, 2, 3]`    # list
-`coordinates = (1, 2)`   # tuple
-
-Mapping Type:
-
-dict: Key-value pairs (dictionary).
-Example:
-
-`person = {"name": "Alice", "age": 25}`
-
-Set Types:
-
-set: Unordered collection of unique elements.
-
-frozenset: Immutable version of set.
+- Sequence Types:
+ - list: Ordered, mutable collection.
+ - tuple: Ordered, immutable collection.
+ - range: Sequence of numbers.
 
 Example:
-
-`unique_numbers = {1, 2, 3}`
-
-Boolean Type:
-
-bool: Represents True or False.
+```python
+numbers = [1, 2, 3]    # list
+coordinates = (1, 2)   # tuple
+```
+- Mapping Type:
+ - dict: Key-value pairs (dictionary).
 Example:
+```python
+person = {"name": "Alice", "age": 25}
+```
 
-`is_valid = True`
+- Set Types:
+ - set: Unordered collection of unique elements.
+ - frozenset: Immutable version of set.
+Example:
+```python
+unique_numbers = {1, 2, 3}
+```
 
-Binary Types:
+- Boolean Type:
+ - bool: Represents True or False.
+Example:
+```python
+is_valid = True
+```
+- Binary Types:
+ - bytes, bytearray, memoryview.
 
-bytes, bytearray, memoryview.
+---
 
+## 5. Strings
 
-## Strings
+**String operations**:
+ - Concatenation: "Hello" + " " + "World"
+ - Repetition: "Hello" * 3
+ - Slicing: "Hello"[1:4] → "ell"
 
-String operations:
-
-Concatenation: `"Hello" + " " + "World"`
-
-Repetition: `"Hello" * 3`
-
-Slicing: `"Hello"[1:4] → "ell"`
-
-Methods:
-
+- Methods:
+```python
 text = "hello"
 print(text.upper())      # "HELLO"
 print(text.lower())      # "hello"
 print(text.find("e"))    # 1 (index of 'e')
 print(text.replace("e", "a"))  # "hallo"
-Multiline Strings:
+```
 
+- Multiline Strings:
+```python
 multiline = """This is 
 a multiline string."""
-
+```
 
 ## 6. Conditional Statements
 Conditional statements allow you to perform different actions based on different conditions.
-
-Syntax:
-
+- Syntax:
+```python
 if condition:
     # Code to run if condition is true
 elif another_condition:
     # Code to run if the second condition is true
 else:
     # Code to run if none of the above conditions are true
-Example:
+```
 
-python
-Copy
+Example:
+```python
 x = 5
 if x > 10:
     print("x is greater than 10")
@@ -166,139 +160,135 @@ elif x == 5:
     print("x is equal to 5")
 else:
     print("x is less than 5")
-
+```
+---
 
 ## 7. Indexing
 Indexing allows you to access individual characters in a string or elements in a sequence (like lists or tuples).
-
+```python
 name = "Python"
 print(name[0])    # P
 print(name[-1])   # n
-
+```
+---
 
 ## 8. Lists and Tuples
-List:
-
-Ordered, mutable collection.
-Methods: append(), remove(), insert(), pop(), sort(), etc.
+- List:
+ - Ordered, mutable collection.
+ - Methods: append(), remove(), insert(), pop(), sort(), etc.
 Example:
-
+```python
 fruits = ["apple", "banana", "cherry"]
 fruits.append("orange")  # Adds to the list
-Tuple:
+```
 
-Ordered, immutable collection.
+- Tuple:
+ - Ordered, immutable collection.
 Example:
-
+```python
 coordinates = (10.0, 20.0)
-
+```
+---
 
 ## 9. Directory Methods
 These are methods related to file and directory manipulation.
-
-os module: Provides methods for directory operations.
-
+- os module: Provides methods for directory operations.
+```python
 import os
 os.mkdir("new_folder")     # Create a new directory
 os.listdir()               # List files in a directory
 os.remove("file.txt")      # Remove a file
 os.rmdir("empty_folder")   # Remove an empty directory
-
+```
+---
 
 ## 10. Sets
-A set is an unordered collection of unique elements.
-Set Operations:
-Union: set1 | set2
-Intersection: set1 & set2
-Difference: set1 - set2
-Symmetric Difference: set1 ^ set2
+- A set is an unordered collection of unique elements.
+- Set Operations:
+ - Union: set1 | set2
+ - Intersection: set1 & set2
+ - Difference: set1 - set2
+ - Symmetric Difference: set1 ^ set2
+
 Example:
-python
-Copy
+```python
 numbers = {1, 2, 3, 4}
 numbers.add(5)           # Adds 5
 numbers.remove(1)        # Removes 1
-
+```
+---
 
 ## 11. Loops
 Loops allow you to execute a block of code multiple times.
-
-For loop:
-
-
+- For loop:
+```python
 for i in range(5):
     print(i)
-While loop:
-
-
+```
+- While loop:
+```python
 i = 0
 while i < 5:
     print(i)
     i += 1
-Break and Continue:
-
-break: Exits the loop.
-continue: Skips the current iteration and continues with the next one.
-
-
-## Functions
-
-Functions allow you to group code into reusable blocks.
-
-Defining a Function:
-
 ```
+-Break and Continue:
+ - break: Exits the loop.
+ - continue: Skips the current iteration and continues with the next one.
+
+---
+
+
+## 12. Functions
+Functions allow you to group code into reusable blocks.
+- Defining a Function:
+```python
 def greet(name):
     return f"Hello, {name}!"
-Calling a Function:
-
-
-print(greet("Alice"))
-Arguments and Return Values:
-
-Functions can accept parameters and return values using the return keyword.
-
-## File Input and Output (I/O)
-
-Python allows reading from and writing to files.
-
-Opening a file:
-
 ```
+- Calling a Function:
+```python
+print(greet("Alice"))
+```
+
+- Arguments and Return Values:
+ - Functions can accept parameters and return values using the **return** keyword.
+
+---
+
+
+## 13. File Input and Output (I/O)
+Python allows reading from and writing to files.
+- Opening a file:
+```python
 file = open("example.txt", "w")  # Open file in write mode
 file.write("Hello, world!")
 file.close()
 ```
-
-Reading from a file:
-
-```
+- Reading from a file:
+```python
 file = open("example.txt", "r")  # Open file in read mode
 content = file.read()
 print(content)
 file.close()
 ```
-
-With statement (automatically closes the file):
-
-```
+- With statement (automatically closes the file):
+```python
 with open("example.txt", "r") as file:
     content = file.read()
     print(content)
 ```
 
 
-## Object-Oriented Programming (OOP) Concepts
+## 14. Object-Oriented Programming (OOP) Concepts
 
-a. Classes and Objects
-
-Class is a blueprint for creating objects.
-
-Object is an instance of a class.
+a. **Classes and Objects**
+ - Class is a blueprint for creating objects.
+ - Object is an instance of a class.
 
 Example:
 
-```
+```python
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -311,12 +301,12 @@ dog1 = Dog("Buddy", 3)
 dog1.bark()  # Calling the method
 ```
 
-b. Inheritance
+b. **Inheritance**
 
 Inheritance allows one class to inherit attributes and methods from another class.
 
 
-```
+```python
 class Animal:
     def speak(self):
         print("Animal is speaking")
@@ -330,13 +320,13 @@ dog.speak()  # Output: Woof!
 ```
 
 
-c. Encapsulation
+c. **Encapsulation**
 
 Encapsulation is the concept of restricting access to certain details of an object.
 
-Using private variables (prefix with double underscore):
+- Using private variables (prefix with double underscore):
 
-```
+```python
 class Person:
     def __init__(self, name):
         self.__name = name  # private attribute
@@ -346,11 +336,11 @@ class Person:
         
 ```
 
-d. Polymorphism
+d. **Polymorphism**
 
 Polymorphism allows methods to behave differently based on the object calling them.
 
-```
+```python
 class Cat:
     def sound(self):
         print("Meow")
