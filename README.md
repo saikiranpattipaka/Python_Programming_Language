@@ -29,8 +29,9 @@ Double quotes: "hello"
 
 Triple quotes (for multi-line strings):
 
-"""This is a 
-multi-line string"""
+`"""This is a 
+multi-line string"""`
+
 
 
 ## 3. Variables
