@@ -46,38 +46,33 @@ Python supports the **Unicode character set**, meaning it can handle characters 
 ---
 
 ## 3. Variables
-A **variable** is a name given to a memory location used to store data.
+- **variable** is a name given to a memory location used to store data.
 - **Declaration**: Python does not require explicit declaration of variables (no need to declare type).
   ```python
   x = 10   # integer variable
   y = 3.14 # float variable
   name = "Alice" # string variable
 
-Dynamic typing: Python is dynamically typed, meaning variables can change types during execution.
+- **Dynamic typing**: Python is dynamically typed, meaning variables can change types during execution.
+```python
+ x = 10       # x is an integer
+ x = "hello"  # x is now a string
+```
+---
 
-`x = 10`       # x is an integer
-
-`x = "hello"`  # x is now a string
-
-
-## Data Types
-
+## 4. Data Types
 Python has various built-in data types:
-
-Numeric types:
-
+- Numeric types:
 int: Integer (whole number).
-
 float: Floating-point number (decimal).
 
-complex: Complex number (x + yj).
-
+- complex: Complex number (x + yj).
 Example:
-
-`x = 10`      # int
-`y = 3.14`    # float
-`z = 2 + 3j`  # complex
-
+```python
+x = 10      # int
+y = 3.14    # float
+z = 2 + 3j  # complex
+```
 Text Type:
 
 str: String (a sequence of characters).
