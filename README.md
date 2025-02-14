@@ -48,16 +48,19 @@ Python supports the **Unicode character set**, meaning it can handle characters 
 ## 3. Variables
 - **variable** is a name given to a memory location used to store data.
 - **Declaration**: Python does not require explicit declaration of variables (no need to declare type).
-  ```python
+  
+```python
   x = 10   # integer variable
   y = 3.14 # float variable
   name = "Alice" # string variable
 ```
 - **Dynamic typing**: Python is dynamically typed, meaning variables can change types during execution.
-  ```python
+
+```python
   x = 10       # x is an integer
   x = "hello"  # x is now a string
 ```
+
 ---
 
 ## 4. Data Types
