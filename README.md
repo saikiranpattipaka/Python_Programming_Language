@@ -9,51 +9,71 @@ First release: Python 0.9.0 was released in 1991.
 Design philosophy: Emphasizes code readability, simplicity, and ease of learning.
 
 Versions:
+
 Python 2.x (1991–2020) – Earlier version, now deprecated.
+
 Python 3.x (2008–present) – Current version, backward incompatible with Python 2.
+
 Popular Usage: Widely used in web development, data science, machine learning, automation, and scientific computing.
 
-2. Character Set
+
+## 2. Character Set
+
 Python supports the Unicode character set, which means it can handle characters from most human languages, including alphabets, symbols, and emojis.
 
 String literals in Python can be defined using:
+
 Single quotes: 'hello'
+
 Double quotes: "hello"
+
 Triple quotes (for multi-line strings):
 
 """This is a 
 multi-line string"""
 
-3. Variables
+
+## 3. Variables
+
 A variable is a name given to a memory location used to store data.
 
 Declaration: Python does not require explicit declaration of variables (no need to declare type).
 
 x = 10   # integer variable
+
 y = 3.14 # float variable
+
 name = "Alice" # string variable
 
 Dynamic typing: Python is dynamically typed, meaning variables can change types during execution.
 
 x = 10       # x is an integer
+
 x = "hello"  # x is now a string
 
-4. Data Types
+
+## 4. Data Types
+
 Python has various built-in data types:
 
 Numeric types:
 
 int: Integer (whole number).
+
 float: Floating-point number (decimal).
+
 complex: Complex number (x + yj).
+
 Example:
 
 x = 10      # int
 y = 3.14    # float
 z = 2 + 3j  # complex
+
 Text Type:
 
 str: String (a sequence of characters).
+
 Example:
 
 name = "Python"
@@ -88,7 +108,9 @@ is_valid = True
 Binary Types:
 
 bytes, bytearray, memoryview.
-5. Strings
+
+
+## 5. Strings
 String operations:
 
 Concatenation: "Hello" + " " + "World"
@@ -105,7 +127,9 @@ Multiline Strings:
 
 multiline = """This is 
 a multiline string."""
-6. Conditional Statements
+
+
+## 6. Conditional Statements
 Conditional statements allow you to perform different actions based on different conditions.
 
 Syntax:
@@ -128,14 +152,16 @@ elif x == 5:
 else:
     print("x is less than 5")
 
-7. Indexing
+
+## 7. Indexing
 Indexing allows you to access individual characters in a string or elements in a sequence (like lists or tuples).
 
 name = "Python"
 print(name[0])    # P
 print(name[-1])   # n
 
-8. Lists and Tuples
+
+## 8. Lists and Tuples
 List:
 
 Ordered, mutable collection.
@@ -152,7 +178,7 @@ Example:
 coordinates = (10.0, 20.0)
 
 
-9. Directory Methods
+## 9. Directory Methods
 These are methods related to file and directory manipulation.
 
 os module: Provides methods for directory operations.
@@ -163,7 +189,8 @@ os.listdir()               # List files in a directory
 os.remove("file.txt")      # Remove a file
 os.rmdir("empty_folder")   # Remove an empty directory
 
-10. Sets
+
+## 10. Sets
 A set is an unordered collection of unique elements.
 Set Operations:
 Union: set1 | set2
@@ -177,7 +204,8 @@ numbers = {1, 2, 3, 4}
 numbers.add(5)           # Adds 5
 numbers.remove(1)        # Removes 1
 
-11. Loops
+
+## 11. Loops
 Loops allow you to execute a block of code multiple times.
 
 For loop:
@@ -197,7 +225,8 @@ Break and Continue:
 break: Exits the loop.
 continue: Skips the current iteration and continues with the next one.
 
-12. Functions
+
+## 12. Functions
 Functions allow you to group code into reusable blocks.
 
 Defining a Function:
@@ -213,7 +242,8 @@ Arguments and Return Values:
 
 Functions can accept parameters and return values using the return keyword.
 
-13. File Input and Output (I/O)
+
+## 13. File Input and Output (I/O)
 Python allows reading from and writing to files.
 
 Opening a file:
@@ -237,7 +267,8 @@ with open("example.txt", "r") as file:
     content = file.read()
     print(content)
 
-14. Object-Oriented Programming (OOP) Concepts
+
+## 14. Object-Oriented Programming (OOP) Concepts
 a. Classes and Objects
 Class is a blueprint for creating objects.
 Object is an instance of a class.
