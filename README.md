@@ -63,9 +63,9 @@ Python supports the **Unicode character set**, meaning it can handle characters 
 ## 4. Data Types
 Python has various built-in data types:
 - **Numeric types**:
-  - int: Integer (whole number).
-  - float: Floating-point number (decimal).
-  - complex: Complex number (x + yj).
+  - `int`: Integer (whole number).
+  - `float`: Floating-point number (decimal).
+  - `complex`: Complex number (x + yj).
 
 Example:
 ```python
