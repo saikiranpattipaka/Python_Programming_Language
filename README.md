@@ -1,6 +1,7 @@
 # Basics of Python
 
-## 1. History of Python
+
+## History of Python
 
 Developed by: Guido van Rossum in 1989.
 
@@ -17,46 +18,45 @@ Python 3.x (2008–present) – Current version, backward incompatible with Pyth
 Popular Usage: Widely used in web development, data science, machine learning, automation, and scientific computing.
 
 
-## 2. Character Set
+## Character Set
 
 Python supports the Unicode character set, which means it can handle characters from most human languages, including alphabets, symbols, and emojis.
 
 String literals in Python can be defined using:
 
-Single quotes: 'hello'
+Single quotes: `'hello'`
 
-Double quotes: "hello"
+Double quotes: `"hello"`
 
 Triple quotes (for multi-line strings):
 
-```
+`
  """This is a 
 multi-line string""" 
-```
+`
 
 
 
-
-## 3. Variables
+## Variables
 
 A variable is a name given to a memory location used to store data.
 
 Declaration: Python does not require explicit declaration of variables (no need to declare type).
 
-x = 10   # integer variable
+`x = 10`   # integer variable
 
-y = 3.14 # float variable
+`y = 3.14` # float variable
 
-name = "Alice" # string variable
+`name = "Alice"` # string variable
 
 Dynamic typing: Python is dynamically typed, meaning variables can change types during execution.
 
-x = 10       # x is an integer
+`x = 10`       # x is an integer
 
-x = "hello"  # x is now a string
+`x = "hello"`  # x is now a string
 
 
-## 4. Data Types
+## Data Types
 
 Python has various built-in data types:
 
@@ -70,9 +70,9 @@ complex: Complex number (x + yj).
 
 Example:
 
-x = 10      # int
-y = 3.14    # float
-z = 2 + 3j  # complex
+`x = 10`      # int
+`y = 3.14`    # float
+`z = 2 + 3j`  # complex
 
 Text Type:
 
@@ -80,46 +80,58 @@ str: String (a sequence of characters).
 
 Example:
 
-name = "Python"
+`name = "Python"`
+
 Sequence Types:
 
 list: Ordered, mutable collection.
 tuple: Ordered, immutable collection.
 range: Sequence of numbers.
+
 Example:
 
-numbers = [1, 2, 3]    # list
-coordinates = (1, 2)    # tuple
+`numbers = [1, 2, 3]`    # list
+`coordinates = (1, 2)`   # tuple
+
 Mapping Type:
 
 dict: Key-value pairs (dictionary).
 Example:
 
-person = {"name": "Alice", "age": 25}
+`person = {"name": "Alice", "age": 25}`
+
 Set Types:
 
 set: Unordered collection of unique elements.
+
 frozenset: Immutable version of set.
+
 Example:
 
-unique_numbers = {1, 2, 3}
+`unique_numbers = {1, 2, 3}`
+
 Boolean Type:
 
 bool: Represents True or False.
 Example:
 
-is_valid = True
+`is_valid = True`
+
 Binary Types:
 
 bytes, bytearray, memoryview.
 
 
-## 5. Strings
+## Strings
+
 String operations:
 
-Concatenation: "Hello" + " " + "World"
-Repetition: "Hello" * 3
-Slicing: "Hello"[1:4] → "ell"
+Concatenation: `"Hello" + " " + "World"`
+
+Repetition: `"Hello" * 3`
+
+Slicing: `"Hello"[1:4] → "ell"`
+
 Methods:
 
 text = "hello"
@@ -272,13 +284,17 @@ with open("example.txt", "r") as file:
     print(content)
 
 
-## 14. Object-Oriented Programming (OOP) Concepts
+## Object-Oriented Programming (OOP) Concepts
+
 a. Classes and Objects
+
 Class is a blueprint for creating objects.
+
 Object is an instance of a class.
+
 Example:
 
-class Dog:
+```class Dog:
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -288,12 +304,14 @@ class Dog:
 
 dog1 = Dog("Buddy", 3)
 dog1.bark()  # Calling the method
+```
 
 b. Inheritance
+
 Inheritance allows one class to inherit attributes and methods from another class.
 
 
-class Animal:
+```class Animal:
     def speak(self):
         print("Animal is speaking")
 
@@ -303,23 +321,30 @@ class Dog(Animal):
 
 dog = Dog()
 dog.speak()  # Output: Woof!
+```
+
 
 c. Encapsulation
+
 Encapsulation is the concept of restricting access to certain details of an object.
 
 Using private variables (prefix with double underscore):
 
+```
 class Person:
     def __init__(self, name):
         self.__name = name  # private attribute
 
     def get_name(self):
         return self.__name
+        
+```
 
 d. Polymorphism
+
 Polymorphism allows methods to behave differently based on the object calling them.
 
-
+```
 class Cat:
     def sound(self):
         print("Meow")
@@ -336,3 +361,4 @@ dog = Dog()
 
 make_sound(cat)  # Meow
 make_sound(dog)  # Bark
+```
