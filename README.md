@@ -3,8 +3,11 @@
 ## 1. History of Python
 
 Developed by: Guido van Rossum in 1989.
+
 First release: Python 0.9.0 was released in 1991.
+
 Design philosophy: Emphasizes code readability, simplicity, and ease of learning.
+
 Versions:
 Python 2.x (1991–2020) – Earlier version, now deprecated.
 Python 3.x (2008–present) – Current version, backward incompatible with Python 2.
