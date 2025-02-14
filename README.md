@@ -62,10 +62,10 @@ Python supports the **Unicode character set**, meaning it can handle characters 
 
 ## 4. Data Types
 Python has various built-in data types:
-- Numeric types:
- - int: Integer (whole number).
- - float: Floating-point number (decimal).
- - complex: Complex number (x + yj).
+- **Numeric types**:
+  - int: Integer (whole number).
+  - float: Floating-point number (decimal).
+  - complex: Complex number (x + yj).
 
 Example:
 ```python
@@ -74,7 +74,7 @@ y = 3.14    # float
 z = 2 + 3j  # complex
 ```
 - Text Type:
- - str: String (a sequence of characters).
+  - str: String (a sequence of characters).
 
 Example:
 ```python
@@ -82,9 +82,9 @@ name = "Python"
 ```
 
 - Sequence Types:
- - list: Ordered, mutable collection.
- - tuple: Ordered, immutable collection.
- - range: Sequence of numbers.
+  - list: Ordered, mutable collection.
+  - tuple: Ordered, immutable collection.
+  - range: Sequence of numbers.
 
 Example:
 ```python
@@ -92,28 +92,28 @@ numbers = [1, 2, 3]    # list
 coordinates = (1, 2)   # tuple
 ```
 - Mapping Type:
- - dict: Key-value pairs (dictionary).
+  - dict: Key-value pairs (dictionary).
 Example:
 ```python
 person = {"name": "Alice", "age": 25}
 ```
 
 - Set Types:
- - set: Unordered collection of unique elements.
- - frozenset: Immutable version of set.
+  - set: Unordered collection of unique elements.
+  - frozenset: Immutable version of set.
 Example:
 ```python
 unique_numbers = {1, 2, 3}
 ```
 
 - Boolean Type:
- - bool: Represents True or False.
+  - bool: Represents True or False.
 Example:
 ```python
 is_valid = True
 ```
 - Binary Types:
- - bytes, bytearray, memoryview.
+  - bytes, bytearray, memoryview.
 
 ---
 
@@ -174,8 +174,8 @@ print(name[-1])   # n
 
 ## 8. Lists and Tuples
 - List:
- - Ordered, mutable collection.
- - Methods: append(), remove(), insert(), pop(), sort(), etc.
+  - Ordered, mutable collection.
+  - Methods: append(), remove(), insert(), pop(), sort(), etc.
 Example:
 ```python
 fruits = ["apple", "banana", "cherry"]
@@ -183,7 +183,7 @@ fruits.append("orange")  # Adds to the list
 ```
 
 - Tuple:
- - Ordered, immutable collection.
+  - Ordered, immutable collection.
 Example:
 ```python
 coordinates = (10.0, 20.0)
@@ -203,12 +203,12 @@ os.rmdir("empty_folder")   # Remove an empty directory
 ---
 
 ## 10. Sets
-- A set is an unordered collection of unique elements.
-- Set Operations:
- - Union: set1 | set2
- - Intersection: set1 & set2
- - Difference: set1 - set2
- - Symmetric Difference: set1 ^ set2
+A set is an unordered collection of unique elements.
+- **Set Operations**:
+  - Union: set1 | set2
+  - Intersection: set1 & set2
+  - Difference: set1 - set2
+  - Symmetric Difference: set1 ^ set2
 
 Example:
 ```python
@@ -220,19 +220,19 @@ numbers.remove(1)        # Removes 1
 
 ## 11. Loops
 Loops allow you to execute a block of code multiple times.
-- For loop:
+- **For loop**:
 ```python
 for i in range(5):
     print(i)
 ```
-- While loop:
+- **While loop**:
 ```python
 i = 0
 while i < 5:
     print(i)
     i += 1
 ```
--Break and Continue:
+- **Break and Continue**:
  - break: Exits the loop.
  - continue: Skips the current iteration and continues with the next one.
 
@@ -252,7 +252,7 @@ print(greet("Alice"))
 ```
 
 - Arguments and Return Values:
- - Functions can accept parameters and return values using the **return** keyword.
+  - Functions can accept parameters and return values using the **return** keyword.
 
 ---
 
@@ -282,7 +282,7 @@ with open("example.txt", "r") as file:
 
 ## 14. Object-Oriented Programming (OOP) Concepts
 
-a. **Classes and Objects**
+ **Classes and Objects**
  - Class is a blueprint for creating objects.
  - Object is an instance of a class.
 
@@ -301,7 +301,7 @@ dog1 = Dog("Buddy", 3)
 dog1.bark()  # Calling the method
 ```
 
-b. **Inheritance**
+**Inheritance**
 
 Inheritance allows one class to inherit attributes and methods from another class.
 
@@ -320,7 +320,7 @@ dog.speak()  # Output: Woof!
 ```
 
 
-c. **Encapsulation**
+**Encapsulation**
 
 Encapsulation is the concept of restricting access to certain details of an object.
 
@@ -336,7 +336,7 @@ class Person:
         
 ```
 
-d. **Polymorphism**
+**Polymorphism**
 
 Polymorphism allows methods to behave differently based on the object calling them.
 
