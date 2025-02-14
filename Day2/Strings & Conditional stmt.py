@@ -3,7 +3,7 @@
 #strings
 
 # str1 = "Ram"
-# str2 = 'sita' # college's 
+# str2 = 'sita' # campus's 
 # str3 = """laxman"""
 
 # str1 = "This is string.\nNewline" # Newline

@@ -1,6 +1,6 @@
 #Day 1  Variables and Data types
 
-# simple program
+#simple program
 
 #print("Hello World")
 #print("Hello World","India")
@@ -8,7 +8,7 @@
 #print(25+29)
 
 
-# Sting & print stmt
+#Sting & print stmt
 
 #name="ram" # String
 #age=20
@@ -30,7 +30,6 @@
 #sum=a+b
 #print(sum)
 #print("The sum of two numbers is ",sum)
-
 
 
 #Arithmetic Operator
