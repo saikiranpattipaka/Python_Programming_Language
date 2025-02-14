@@ -242,12 +242,13 @@ break: Exits the loop.
 continue: Skips the current iteration and continues with the next one.
 
 
-## 12. Functions
+## Functions
+
 Functions allow you to group code into reusable blocks.
 
 Defining a Function:
 
-
+```
 def greet(name):
     return f"Hello, {name}!"
 Calling a Function:
@@ -258,30 +259,34 @@ Arguments and Return Values:
 
 Functions can accept parameters and return values using the return keyword.
 
+## File Input and Output (I/O)
 
-## 13. File Input and Output (I/O)
 Python allows reading from and writing to files.
 
 Opening a file:
 
-python
-Copy
+```
 file = open("example.txt", "w")  # Open file in write mode
 file.write("Hello, world!")
 file.close()
+```
+
 Reading from a file:
 
-
+```
 file = open("example.txt", "r")  # Open file in read mode
 content = file.read()
 print(content)
 file.close()
+```
+
 With statement (automatically closes the file):
 
-
+```
 with open("example.txt", "r") as file:
     content = file.read()
     print(content)
+```
 
 
 ## Object-Oriented Programming (OOP) Concepts
@@ -294,7 +299,8 @@ Object is an instance of a class.
 
 Example:
 
-```class Dog:
+```
+class Dog:
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -311,7 +317,8 @@ b. Inheritance
 Inheritance allows one class to inherit attributes and methods from another class.
 
 
-```class Animal:
+```
+class Animal:
     def speak(self):
         print("Animal is speaking")
 
