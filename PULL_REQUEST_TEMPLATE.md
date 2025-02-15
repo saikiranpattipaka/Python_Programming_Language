@@ -1,20 +1,15 @@
-# Pull Request Template
+# Pull Request
 
 ## Description
-Please provide a short description of the changes you are making and why these changes are needed.
+Thank you for investing your time.
 
 ## Related Issue
-If applicable, please link to the related issue(s) that this pull request addresses:
 - Closes #<issue-number>
-- Fixes #<issue-number>
+
 
 ## Type of Change
-What type of change is this pull request introducing?
-- [ ] Bug fix
-- [ ] New feature
 - [ ] Documentation update
-- [ ] Refactor
-- [ ] Other (please describe)
+
 
 ## Checklist
 Please make sure your pull request passes the following criteria:
@@ -29,4 +24,4 @@ Please make sure your pull request passes the following criteria:
 If there is anything else you would like to mention about this pull request (e.g., screenshots, additional context), please include it here.
 
 ## Reviewers
-Please assign at least one reviewer to this pull request. If you’re unsure, feel free to leave it unassigned, and the maintainers will review it.
+unassigned
