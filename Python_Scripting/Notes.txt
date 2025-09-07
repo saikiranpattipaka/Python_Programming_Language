@@ -1,0 +1,577 @@
+Python
+Guido van Rossum
+- Platform Independent
+- Many Modules (pre-defined & third Party)
+- Code length is very short
+- Easy to learn
+- Supports both functional & OOPS concepts
+
+
+Indentation (Space)
+- Indentations are used to represent a block of Code
+- The amount of Indentation is up to you, but it must be consistent throughout that block
+
+
+Comments
+# - Single line Comments
+""" - Multi-line Comments
+''' - Multi-line Comments
+
+Special characters
+- Write special characters only inside of quotes " " or ' '
+- \n - New Line
+- \b - Back Space
+- \t - Tab
+- \ - Escape symbol (D:\SAI\Programs\Python Practice\Python_Scripting)
+- \a - Alert Sound
+
+
+In Linux 
+#!/usr/local/bin/python3 -> Shebang Line
+chmod +x hello.python3
+./hello.py
+
+
+Variable
+- A variable is nothing but a reserved memory location to store values.
+- Re-declare Variable
+x=10
+print(x)
+x=20
+print(x)
+
+- Deleting a variable
+del x
+print(x)
+
+Rules to define a variable names
+- It can contain letters, numbers, and underscores.
+- It must start with a letter or underscore.
+- It cannot start with a number.
+- It cannot be a keyword or reserved word in Python.
+- It should be descriptive and meaningful.
+- case sensitive [ i I ]
+
+
+Data Types or Variable Data Types
+- Number (int,float and complex)
+- Strings # Sequence of characters enclosed in quotes (Immutable)
+- Boolean
+
+Type casting or Type Conversion
+Convert one Data type to another
+-int,float,complex
+-Strings
+-Boolean
+
+NOTE Any data type can be converted into bollean
+Boolean(any data type)=True or False
+Boolean(empty) & Boolean(None)=False
+Boolean(non-empty)=True
+Any data type can be converted into string but reverse is not always True
+
+
+Print with variables and Strings
+print("{} {} {} {}".format(x,y,z,lang_name)) 
+print("{3} {2} {1} {0}".format(x, y, z, lang_name)) 
+print(f"{x} {y} {z} {lang_name}")
+
+
+Input & Output statements
+a=input("Enter a value:")
+
+x=eval(input("Enter x:")) # eval auto detects with type of input is given by user.
+prefer to use eval instead of int or float 
+
+
+Working with Python Strings
+- String is a sequence of characters enclosed in quotes
+- Conversion of character to a number is called encoding and the reverse process is decoding
+ASCII & Unicode are some of the popualr encoding used
+
+Want to write multiple lines use triple quotes
+"""
+I started as an HR and
+later moved into DevOps
+"""
+012345
+Python
+-6-5-4-3-2-1
+
+- String are Immutable
+Elements cannot be changed once it is assigned. can reassign different strings to the same name
+
+- Creating s string
+- Access characters in string
+- length of s string
+- Add/concatenate two string
+
+
+String Conversion
+upper,lower,swapcase,title,casefold etc
+
+
+Boolean result
+startswith,islower,isupper,istitle,isspace,isalpha,isnumeric
+
+
+Join,center and zfill string operation
+x="python" 
+y="-".join(x) # -, *, \n, \t, 
+print(y)
+
+z="python"
+print(z.center(20))
+
+z="python"
+print(z.zfill(10)) # padding
+
+
+strip & split operations on strings
+- strip will reomves extra spaces in string
+- split gives list Output
+
+
+Count, index and find operations on strings
+- count gives the number of times a substring appears in a string
+- index returns the first occurrence of a substring in a string
+- find returns the first occurrence of a substring in a string, but returns -1 if not found
+
+
+Data Structures of python
+- Data Structures are also a variables
+- Data Structures are used to store a collection of data
+- 4 built-in data Structures
+- List [ ]
+- Tuple ( )
+- Dictionary { } with key value pair
+- Set { }
+
+
+List
+- List is a collection of items enclosed in square brackets [ ]
+- List can contain any data type or mixed data # [3,4.5,"python",5.8]
+- List can be modified (mutable)    
+
+bool(emp_list) => False
+bool(emp_list) => True
+
+.index, count, clear, append, insert, extend, remove, pop, reverse, sort.
+
+
+Tuple
+- Tuple is a collection of items enclosed in parentheses ( )
+- Tuple can contain any data type or mixed data # (3,4.5,"python",5.8)
+- Tuple cannot be modified (immutable)
+- Tuple is faster than list
+
+
+Dictionary
+- Dictionary is a collection of key-value pairs enclosed in curly braces { }
+- Dictionary can contain any data type or mixed data
+- Dictionary is mutable
+- Dictionary is unordered and does not support indexing (in older versions 2. in 3.v it is ordered)
+- Dictionary can be created using curly braces or the dict() function
+- Dictionary can be accessed using keys
+
+
+Set
+- Set is a collection of unique items enclosed in curly braces { }
+- Set unordered collection of data
+- Set can contain any data type or mixed data
+- Set is mutable
+- Set does not support indexing
+- Set does not allow duplicate items
+
+
+Operators
+- Opeartors are the pillars for any language
+- The Opeartors can be defined as a symbol which is responsible for a particular operation between two operands
+- Operands may be values or variables or combination of values and variables
+1.Arithmetic Operators [for 1 & 2 Takes values as inputs, performs its operation and gives values as output]
+2.Assignment Opeartors
+3.Comparison Opeartors [for 3,4 & 5 Takes values as input perform its operation and gives output as either True or False]
+4.Identity Opeartors
+5.Membership Operators
+6.Logical Opeartors [for 6 Takes True or false as input perform operation on this inputs and give output either True or False]
+7.Bitwise Opeartors [Take values as input perform on its binary representation and gives it as a value]
+
+
+
+Arithmetic Opeartors
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
+- Modulus (%) [Remainder]
+- Floor division (//) [will removes float values Exp 3.5 result is 3]
+- Exponentiation (**)
+
+
+Assignment Opeartors
+- Assignment (=)    [a=b]
+- Add and assign (+=)  [a+=b ; a=a+b]
+- Subtract and assign (-=)  [a-=b ; a=a-b]
+- Multiply and assign (*=)  [a*=b ; a=a*b]
+- Divide and assign (/=)    [a/=b ; a=a/b]
+- Modulus and assign (%=)   [a%=b ; a=a%b]
+
+
+Comparison Opeartors
+- Provide a space between Operand [EX a > b]
+>  Greater than  - True if left operand is Greater than the right x > y
+< Less than - True if left operand is less than the right x < y 
+== Euqal to - True if both operands are equal x == y 
+!= Not equal to - True if operands are not equal x != y 
+>= Greater than or equal to - True if left operand is Greater than or equal to the right x >= y 
+<= Less than or equal to - True if left operand is less than or equal to the right x <= y 
+
+
+Identity Opeartors
+- Identity Operators are used to find the type of class/type/object
+is  # Same object 
+is not # Not the same object
+
+Membership Opeartors
+- Membership Opeartors are used to validate the membership of a value.
+in # value exists in sequence 'a' in 'apple'  True
+not in # Value does not exist in sequence 'x' not in 'apple' True
+
+
+Logical Opeartors
+- Logical Opeartors are useful to combine multiple conditions.
+- AND [If both the values are True then output is True] 
+- OR  [If any one value is True then output is True]
+- NOT 
+
+If there are multiple and conditions like 9 or 10; we can use
+all([2<3,4<5,5<6,7<10]) all==and
+any([2<3,4<5,5<6,7<10])  any==or
+
+Bitwise Operators
+- Bitwise operators operate on variables at the binary(bit) level.
+5 in binart 0101 [8421]
+3 in binary 0011
+
+& AND [Bits that are 1 in both operands]
+` OR [Bits that are 1 in either operand]
+^ XOR [Bits that are 1 in only one operand]
+~ NOT [Inverts all bits 0's to 1's 1's to 0's]
+<< Left shift [Shifts bits left, adds 0s from the right]
+>> Right shift [Shifts bits right, removes rightmost bits]
+
+
+Conditional statements
+if
+- if is called simple Conditional statement used to control the execution of set of lines or block of code or one line.
+
+if else 
+
+if elif else
+
+
+Modules
+- A module is a file containig Python definitions and statements. That means, module containig python functions,classes and varaibles.
+Reuasbility
+
+platform,math,sys,os,subbprocess,random,datetime,os,sys,json,time
+
+Types of Modules
+- Default Modules
+- Third Part Modules
+
+Platform Module
+-Platform module is used to access the underlying platform's data such as hardware,operating system and interpreter version info
+-There is a built-in function to list all the function name (or variable names) in a module and that is dir() function
+print(dir(platform))
+print(help(platform))
+
+getpass Module
+-Safely take user input for passwords without showing the input on the screen
+getpass() & getuser()
+
+getpass() Promots the user for a password without echoing.The getpass module provides a secure way to handle the password prompts where programs interact with the users via terminal
+getuser() Function displays the login name of the user.This function checks the environment variables LOGNAME,USER,LNAME and USERNAME, in order and returns the value of the first non-empty string.
+
+sys Module
+The sys module is used to work with python runtime environment
+The sys module provides functions and variables used to manipulate different parts of the Python runtime environment.
+sys.exit()
+
+sys.argv
+sys.argv returns a list of command line argumnets passed to a Python script
+
+
+OS Modules
+Used to work/interact with Operating system to automate many more tasks like creating directory, removing directory,identity current directory and many more
+os
+os.sep 
+os.path 
+os.system 
+os.walk
+
+os.getcwd() current working directory
+os.chdir(path)  Change working directory
+os.listdir(path) List contents
+os.mkdir(path) create directory
+os.remove(path) Delete file
+os.path.join() safe path joining
+os.path.exists() check if path exists
+os.environ Access environment variables
+os.system(cmd) Execute shell command
+os.rename(src,dst) Rename files
+os.rmdir(path) Delete folder
+os.getgid()
+os.getpid()
+
+os.path Module - is a sub module of os
+works on paths 
+os.path.sep 
+os.path.basename(path)
+os.path.dirname(path)
+os.path.join(path1,path2)
+os.path.split(path)
+os.path.getsize(path)
+os.path.exists(path)
+os.path.isfile(path)
+os.path.isdir(path)
+os.path.islink(path)
+
+os.system() Module - Execute OS commands
+os.system("ls")
+
+os.walk - generate directory and file names in a directory tree by walking
+import os
+path="D:\\SAI\\Programs\\My_Resume_Website"
+print(list(os.walk(path))) # Walk through directory
+print(r,d,f) # root,directory & list
+
+datetime Module
+used to work with dates and times
+date, time, datetime,  timedelta[The timedelta object represents a duration, i.e., the difference between two dates/times.], timezone
+
+paramiko Module 
+used to handle SSH2 protocol for secure connections to remote machines
+SSHv2
+two ways to connect with remote server
+-using username and password
+-using username and cryptographic key
+
+
+Shutil Module
+- High-level operations on files and collections of files, such as copying, moving, deleting, and archiving. It's commonly used for file management tasks and directory operations
+
+| Function           | Purpose                      |
+| ------------------ | ---------------------------- |
+| `copy()`           | Copy file (with permissions) |
+| `copy2()`          | Copy file + metadata         |
+| `move()`           | Move file/folder             |
+| `rmtree()`         | Delete folder (recursively)  |
+| `make_archive()`   | Create compressed archive    |
+| `unpack_archive()` | Extract from archive         |
+| `disk_usage()`     | Get disk space stats         |
+
+
+subprocess Module
+Execute operating system commands
+
+syntax
+
+import subprocess
+sp=subprocess.Popen(cmd,shell=True/False,stdout=subprocess.PIPE,stderr=subprocess.PIPE,universal_newlines=True)
+rc=sp.wait()
+out,err=sp.communicate()
+print(f'OUTPUT is: {out}')
+print(f'ERROR is: {err}')
+
+cmd='dir'
+cmd='ls -lrt'
+shell=True
+- If shell=True then your cmd is a string 
+
+cmd=['ls','-lrt']
+shell=False
+- If shell=False then your cmd is a list
+cmd "ls -lrt".split() or ['ls','-lrt']
+
+shell=True (Always its true in Windows OS system)
+
+
+Loops
+Execute a block of code many times
+
+for - When iterating over known items {for While Types of Loops}
+for variable in sequence
+to iterate over a sequence (list,tuple,string) or other iterable objects.
+
+range()
+- Built-in function
+- Generagtes integer as a list
+
+
+while - When condition controls repetition
+Execute block of statements repeatedly until a given a condition is satisfied.
+{Infinity no of times}
+- The while loop is used to iterate over a block of code as long as the test expression(condition) is true.
+- We generally use this loop when we don't know beforehand, the number of times to iterate.
+
+Loop control statements
+break - To stop a loop early {Break,contine,else Loop control statements}
+contine - To skip the current iteration
+pass - It will passes the code
+else - To run code after loop completes
+
+File Handling
+- Allows you to create, read, write, and delete files
+file_object=open("filename","mode")
+r(read),w(write),a(append),x(exclusive creation.Fails if file exists),b(Binary mode),t(Text mode),+(r+,w+)
+
+read(size) -Reads up to size characters
+readline() -Reads one line
+readlines() -Reads all lines
+write(str) -Writes string to file
+writelines(lists) -Writes list of strings
+seek(offset) -Changes file cursor position
+tell() -Returns the current cursor position
+close() -Closes the file
+
+Moving contents from source to destination file
+
+CSV Comma Separated Values 
+import csv 
+-writerow
+
+JSON JavaScript Object Notation
+- used for representing structured data
+
+Exception Handling
+- A Python program terminates as soon as it encounters an error 
+
+Errors
+- Syntax error
+- ZeroDivision Error
+- ValueError
+- TypeError
+- FileNotFoundError
+- Index Error
+- KeyError
+- AttributeError
+
+try - Code that might raise an exception
+except ExceptionType-  Code that runs if an exception occurs
+else - Code that runs if no exception occurs
+finally - Code that always runs (optional). It's useful for cleanup like closing files or releasing resources
+
+Custom Exceptions
+- raise (Used to raise an existing exception)
+- assert (Used to create an AssertionError)
+
+Functions
+- Functions in Python are blocks of reusable code that perform a specific task. They help make code modular, readable, and maintainable.
+
+syntax
+def function_name(parameters):
+    """Optional docstring"""
+    # code block
+    return value  # optional
+
+Rules to define function
+- Function name should have only a-a,A-Z,0-9,_ 
+- Function should not start with number but can it be start with _
+- Don't include any space.
+- Function must be define before calling it 
+same rules like variables
+
+Types of Functions
+- Built-in Functions
+- User-Define Functions
+
+Global Variable [To modify a global variable inside a function, use the global keyword]
+Local Variable
+
+
+RegEx Regular expression
+- The regex is a procedure in any language to look for a specified pattern in a given text.
+
+RegEx Functions
+
+Module for Regular Expression: re
+re.match()-Checks for a match only at the beginning of the string
+search()-Searches the string for the first location of the pattern
+findall()-Returns a list of all matches
+finditer()-Returns an iterator yielding match objects
+sub()-Replaces pattern matches with a specified string
+split()-Splits a string by occurrences of the pattern
+compile()-Compiles a regex pattern for reuse
+
+Rules to create a pattern
+a,x,9 - Ordinary characters that match themselves
+[abc] - Matches a or b or c 
+[a-c] - Matches a or b or c 
+[a-zA-Z0-9] - Matches any letter from (a to z) or (A to Z) or (o to 9)
+
+
+RegEx & Metacharacters
+Basic Symbols
+| Symbol  | Meaning                      | Example     | Matches                               | 
+| ------- | ---------------------------- | ----------- | ------------------------------------- | 
+| `.`     | Any character except newline | `a.c`       | `abc`, `a1c`, `a-c`                   |  
+| `^`     | Start of string              | `^a`        | Matches if string starts with `a`     |    
+| `$`     | End of string                | `z$`        | Matches if string ends with `z`       |                 
+| `*`     | 0 or more of preceding       | `a*`        | `""`, `a`, `aa`, `aaa`                |     
+| `+`     | 1 or more of preceding       | `a+`        | `a`, `aa`, `aaa`                      |     
+| `?`     | 0 or 1 of preceding          | `a?`        | `""`, `a`                             |     
+| `[]`    | Character set                | `[abc]`     | `a`, `b`, or `c`                      |     
+| `[^]`   | Negated character set        | `[^abc]`    | Any character except `a`, `b`, or `c` |    
+| `{n}`   | Exactly n occurrences        | `a{3}`      | `aaa`                                 |    
+| `{n,}`  | n or more occurrences        | `a{2,}`     | `aa`, `aaa`, `aaaa`                   |    
+| `{n,m}` | Between n and m              | `a{2,4}`    | `aa`, `aaa`, `aaaa`                   |    
+| \`      | \`                           | OR operator | \`a                                   | 
+| `()`    | Grouping                     | `(abc)+`    | `abc`, `abcabc`                       |    
+
+
+Special Sequence
+| Sequence | Meaning                            | Example  | Matches                          |
+| -------- | ---------------------------------- | -------- | -------------------------------- |
+| `\d`     | Digit (0–9)                        | `\d+`    | `123`, `4567`                    |
+| `\D`     | Non-digit                          | `\D+`    | `abc`, `!!!`                     |
+| `\w`     | Word character (a-z, A-Z, 0-9, \_) | `\w+`    | `word123`                        |
+| `\W`     | Non-word character                 | `\W+`    | `@#$`                            |
+| `\s`     | Whitespace                         | `\s+`    | spaces, tabs                     |
+| `\S`     | Non-whitespace                     | `\S+`    | `abc`, `123`                     |
+| `\b`     | Word boundary                      | `\bword` | Matches "word" at word start     |
+| `\B`     | Non-boundary                       | `\Bword` | Matches "word" not at word start |
+
+
+OOPS
+Object-Oriented Programming (OOP/OOPS) in Python is a programming paradigm based on the concept of “objects”, which can contain:
+Data (attributes or properties)
+Code (methods or functions)
+
+| Concept       | Meaning                                                       |
+| ------------- | ------------------------------------------------------------- |
+| Class         | Blueprint for creating objects                                |
+| Object        | Instance of a class                                           |
+| Inheritance   | Child class inherits from parent class                        |
+| Encapsulation | Hides internal data using access modifiers                    |
+| Polymorphism  | Same method name behaves differently in different classes     |
+| Abstraction   | Hides implementation details and exposes only necessary parts |
+
+| OOP Concept   | Real-Life Analogy                              | Meaning                           |
+| ------------- | ---------------------------------------------- | --------------------------------- |
+| Class         | House blueprint                                | Template or design                |
+| Object        | Actual house                                   | Instance of a class               |
+| Inheritance   | Child inherits traits from parents             | Reuse code from parent class      |
+| Polymorphism  | Start button on different devices              | Same method, different behavior   |
+| Encapsulation | ATM hides internal processing                  | Data hiding and restricted access |
+| Abstraction   | Driving a car without knowing engine internals | Focus on essential features only  |
+
+Constructor 
+A constructor in Python is a special method used to initialize the object's state (i.e., its variables) when it is created
+__init__()
+def __init__(self):
+This method is automatically called when a new object of the class is created
+
+Destructor
+A destructor is a special method used to clean up when an object is about to be destroyed
+__del__()
